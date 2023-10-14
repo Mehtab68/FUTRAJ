@@ -1,3 +1,6 @@
+
+/* profit calculator funtions */
+
 function returnText() {
     let buyPrice = document.getElementById("buyPrice").value 
     let sellPrice = document.getElementById("sellPrice").value
@@ -11,10 +14,6 @@ function returnText() {
 
 }
 
-
-
-
-
 let profit = localStorage.getItem("profitText")
 console.log(profit);
 
@@ -26,3 +25,27 @@ if (profit >= 0) {
         profitText.textContent += "You lost " + profit + " coins"
     }
 
+/* search bar */
+
+
+    function sendToPage(){
+        var input = document.getElementById("search").value;
+         //alert(input);
+        if (input == "marquee"){
+            location.href = "marquee.html";
+            return false;
+        }
+        else if (input == "profit"){
+            location.href = "index.html";
+            return false;
+        }
+        else if(input == "about"){
+            location.href = "about.html"
+        }
+        else if(input == "card"){
+            location.href = "card.html"
+        }
+        else {
+            alert('Invalid Input.');
+        }
+            }

@@ -74,6 +74,7 @@ padding-bottom: 50px;
 /* marquee matchups title alligment  */
 
 .marqueeTitle h1{
+color: black;
 padding-top: 50px;
 padding-left: 15%;
 padding-bottom: 50px;
@@ -81,8 +82,40 @@ padding-bottom: 50px;
 
 /* marquee matchups images alligment  */
 
+.marqueePredictions{
+  max-width: 800px;
+  padding-left: 10%;
+}
+
 .marqueePredictions img{
 padding-left: 15%;
-width: 50%;
+width: 55%;
 height: 30%;
 }
+
+/* marquee matchups week (font sizes, positioning)*/
+
+.marqueePredictions h2,button{
+  font-size: 20px;
+  position: relative;
+  left: 350px;
+  bottom: 130px;
+}
+
+
+
+
+
+/* customize search bar */
+
+
+.search1{
+  position: relative;
+  right: 300px;
+}
+
+.search2{
+  position: relative;
+  right: 150px;
+}
+
