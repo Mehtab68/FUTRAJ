@@ -53,7 +53,7 @@ if (isset($_SESSION["user"])) {
                     <a class="nav-link" href="about.html"> About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html"> Sign In</a>
+                    <a class="nav-link" href="login.php"> Sign In</a>
                 </li>
             </ul>
 
@@ -89,23 +89,31 @@ if (isset($_SESSION["user"])) {
                 }
             }
             ?>
-            <form action="login.php" method="post">
-                <div class="form-group">
-                    <input type="email" placeholder="Enter Email:" name="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Enter Password:" name="password" class="form-control">
-                </div>
-                <div class="form-btn">
-                    <input type="submit" value="Login" name="login" class="btn btn-primary">
-                </div>
-            </form>
-            <div>
-                <p>Not registered yet <a href="registration.php">Register Here</a></p>
-            </div>
-        </div>
 
-        <!-- footer 
+            <div class="background">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <form class="loginForm" action="login.php" method="post">
+
+                <h3> Login Here </h3>
+
+                <label for="email">Username</label>
+                <input type="email" placeholder="Enter Email:" name="email" class="loginInput">
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password:" name="password" class="loginInput">
+
+                <input type="submit" value="Login" name="login" class="loginButton">
+                <div>
+                    <p>Not registered yet <a href="registration.php">Register Here</a></p>
+                </div>
+        </div>
+        </form>
+
+    </div>
+
+    <!-- footer 
 
 
 <footer class="bg-dark text-white pt-5 pb-4 ">
