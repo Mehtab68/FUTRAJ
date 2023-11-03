@@ -11,11 +11,10 @@ function returnText(event) {
     var taxBuy = parseInt(sellPrice)-(parseInt(sellPrice)*0.05)
     var profit = (parseInt(taxBuy)-parseInt(buyPrice)) * parseInt(numberPlayers)
     var profitText = document.getElementById("profitText")
-
     localStorage.setItem("profitText", profit)
     let lol = localStorage.getItem("profitText")
-
 }
+
 
 let profit = localStorage.getItem("profitText")
 console.log(profit);
@@ -28,8 +27,9 @@ if (profit >= 0) {
         profitText.textContent += "You lost " + profit + " coins"
     }
 
-/* search bar */
 
+
+/* search bar */
 
     function sendToPage(){
         var input = document.getElementById("search").value;

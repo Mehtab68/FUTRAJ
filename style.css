@@ -14,12 +14,58 @@
 }
 
 /* tax form */
-.tax{
+
+
+
+.profitForm{
+  height: 520px;
+  width: 400px;
+ background-color: #080710;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+.profitForm *{
+  font-family: 'Poppins',sans-serif;
+  color: white;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.profitForm input{
+  color: black;
+}
+
+.profitForm h3{
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 42px;
   text-align: center;
-  padding-top: 1%;
+}
+
+.profitForm h1{
+  font-size: 35px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.profitForm label{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .resetBTN{
+  position: relative;
+  left: 105px;
 flex-direction: column;
 align-items: center;
 padding: 6px 14px;
@@ -35,13 +81,10 @@ user-select: none;
 touch-action: manipulation;
 }
 
-.resetBTN:focus {
-box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-outline: 0;
-}
 
 .submitBTN{
-  flex-direction: column;
+  position: relative;
+  left: 100px;
   align-items: center;
   padding: 6px 14px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
@@ -56,10 +99,6 @@ outline: 0;
   touch-action: manipulation;
 }
 
-.submitBTN:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-}
 
 .aboutBody{
 padding-left: 15%;
@@ -162,21 +201,7 @@ height: 30%;
 
 /* loginForm */ 
 
-.background{
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
-}
 
-.background .shape{
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius: 50%;
-}
 
 .loginForm{
   height: 520px;

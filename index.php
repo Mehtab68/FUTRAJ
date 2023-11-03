@@ -45,7 +45,7 @@ if (!isset($_SESSION["user"])) {
                     <a class="nav-link" href="index.html"> Profit Calculator</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="card.html"> Card Creator</a>
+                    <a class="nav-link" href="packprofit.html"> Pack Profit</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
@@ -54,8 +54,10 @@ if (!isset($_SESSION["user"])) {
                     <a class="nav-link" href="about.html"> About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html"> Sign In</a>
+                    <a class="nav-link" href="login.php"> Sign In</a>
                 </li>
+
+
             </ul>
 
 
