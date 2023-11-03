@@ -77,7 +77,7 @@ padding-bottom: 50px;
 color: black;
 padding-top: 50px;
 padding-left: 15%;
-padding-bottom: 50px;
+
 }
 
 /* marquee matchups images alligment  */
@@ -95,13 +95,53 @@ height: 30%;
 
 /* marquee matchups week (font sizes, positioning)*/
 
-.marqueePredictions h2,button{
+.marqueePredictions h2{
   font-size: 20px;
   position: relative;
   left: 350px;
   bottom: 130px;
 }
 
+.marqueePredictions button{
+  font-size: 20px;
+  position: relative;
+  left: 350px;
+  bottom: 130px;
+}
+
+/* marquee matchups deep content */
+
+.marquee-content{
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.marquee-content h3{
+  margin-top: 19px;
+  font-size: 20px;
+  color: black;
+}
+
+.marquee-content img{
+  width: 769px;
+  height: 433px;
+}
+
+/* marquee matchups border games */
+
+.MarqueeGames h3{
+ margin-top: 50px;
+}
+
+.MarqueeGames h2{
+  position: relative;
+  left: 70px;
+  text-align: center;
+  width: 290px;
+  background-color: paleturquoise;
+  
+}
 
 
 
@@ -111,11 +151,23 @@ height: 30%;
 
 .search1{
   position: relative;
-  right: 300px;
+  right: 250px;
 }
 
 .search2{
   position: relative;
-  right: 150px;
+  right: 130px;
 }
 
+body{
+  padding:50px;
+}
+.container{
+  max-width: 600px;
+  margin:0 auto;
+  padding:50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-group{
+  margin-bottom:30px;
+}

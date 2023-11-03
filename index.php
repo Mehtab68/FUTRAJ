@@ -1,35 +1,45 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: login.php");
+}
+?>
+
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FUTRAJ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
 
-     <!-- navbar -->
-     <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-dark">
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-dark">
         <div class="container-xxl">
-            <a href="index.html" class="navbar-brand">  
-            <span class="fw-bold text-secondary">
-                FUTRAJ
-            </span>
-        </a>
-        <!-- toggle button for mobile-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" 
-        aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-    </button>
+            <a href="index.html" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    FUTRAJ
+                </span>
+            </a>
+            <!-- toggle button for mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
-    <!-- search bar -->
-    <input class="search2" type="text" method="put" id="search" placeholder="Search" value="">
-    <input class="search1" type='submit' onclick="sendToPage();"/>
+            <!-- search bar -->
+            <input class="search2" type="text" method="put" id="search" placeholder="Search" value="">
+            <input class="search1" type='submit' onclick="sendToPage();" />
 
-    <!-- navbar links -->
-    
+            <!-- navbar links -->
+
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"> Profit Calculator</a>
@@ -43,25 +53,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html"> About Us</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"> Sign In</a>
+                </li>
             </ul>
 
-        
+
 
         </div>
     </nav>
 
-     <!-- Background image -->
-<div style="background-color: grey; height: 60vh;">    
+    <!-- Background image -->
+    <div style="background-color: grey; height: 100vh;">
+
+        <div class="container">
+            <h1>Welcome to Dashboard</h1>
+            <a href="logout.php" class="btn btn-warning">Logout</a>
+        </div>
 
 
-    <div class="title">
-        <h1 > We are <span class="text-warning">FUTRAJ </span></h1>
-        <p> The Best EAFC Community Out There! All The Ressources You Need To Become A Better Player!</p>
-        <img src="./images/ea_sportf_fc_24_cover_1689079417754.jpg" alt="EAFC Cover" width="600">
-    </div>
-
-</div>
- 
+        <!-- footer 
 
 
 <footer class="bg-dark text-white pt-5 pb-4 ">
@@ -98,13 +109,18 @@
             <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
         <p>
-          <i class="fas fa-home mr-3">Montreal, CA</i>  
+          <i class="fas fa-home mr-3">Montreal, H9H 4R7, CA</i>  
         </p>
         <p>
             <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>  
           </p>
           <p>
-          
+            <i class="fas fa-phone mr-3">+514 994 0583</i>  
+          </p>
+          <p>
+            <i class="fas fa-print mr-3">Unknown</i>  
+          </p>
+
             </div>
 
         </div>
@@ -140,15 +156,19 @@
                         </li>
                     </ul>
                 </div> -->
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
 
-</footer>
+    </footer>
 
-<script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </body>
+
 </html>
