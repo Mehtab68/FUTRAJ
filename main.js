@@ -4,19 +4,18 @@
 
 
 function returnText(event) { 
-    event.preventDefault();
     let buyPrice = document.getElementById("buyPrice").value 
     let sellPrice = document.getElementById("sellPrice").value
     let numberPlayers = document.getElementById("numberPlayers").value
     var taxBuy = parseInt(sellPrice)-(parseInt(sellPrice)*0.05)
     var profit = (parseInt(taxBuy)-parseInt(buyPrice)) * parseInt(numberPlayers)
     var profitText = document.getElementById("profitText")
-    localStorage.setItem("profitText", profit)
-    let lol = localStorage.getItem("profitText")
+    sessionStorage.setItem("profitText", profit)
+    let lol = sessionStorage.getItem("profitText")
 }
 
 
-let profit = localStorage.getItem("profitText")
+let profit = sessionStorage.getItem("profitText")
 console.log(profit);
 
 

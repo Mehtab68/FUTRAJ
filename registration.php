@@ -115,31 +115,36 @@
 
             }
             ?>
-            <form action="registration.php" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email:">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Password:">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
-                </div>
-                <div class="form-btn">
-                    <input type="submit" class="btn btn-primary" value="Register" name="submit">
-                </div>
+
+
+
+            <form class="registerForm" action="login.php" method="post">
+
+                <h3> Login Here </h3>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" class="loginInput" name="fullname" placeholder="Full Name:">
+
+                <label for="email">Email</label>
+                <input type="email" class="loginInput" name="email" placeholder="Email:">
+
+                <label for="email">Password</label>
+                <input type="password" class="loginInput" name="password" placeholder="Password:">
+
+                <label for="email">Repeat Password</label>
+                <input type="password" class="loginInput" name="repeat_password" placeholder="Repeat Password:">
+
+
+                <input type="submit" class="registerButton" value="Register" name="submit">
+
             </form>
-            <div>
-                <div>
-                    <p>Already Registered <a href="login.php">Login Here</a></p>
-                </div>
-            </div>
+
         </div>
 
-        <!-- footer 
+
+    </div>
+
+    <!-- footer 
 
 
 <footer class="bg-dark text-white pt-5 pb-4 ">

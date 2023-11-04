@@ -69,7 +69,9 @@ if (!isset($_SESSION["user"])) {
     <div style="background-color: grey; height: 100vh;">
 
         <div class="container">
-            <h1>Welcome to Dashboard</h1>
+            <h1>Welcome to Dashboard
+                <?php echo $email ?>
+            </h1>
             <a href="logout.php" class="btn btn-warning">Logout</a>
         </div>
 

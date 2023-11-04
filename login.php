@@ -92,10 +92,7 @@ if (isset($_SESSION["user"])) {
             }
             ?>
 
-            <div class="background">
-                <div class="shape"></div>
-                <div class="shape"></div>
-            </div>
+
             <form class="loginForm" action="login.php" method="post">
 
                 <h3> Login Here </h3>
