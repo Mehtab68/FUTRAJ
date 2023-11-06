@@ -56,10 +56,23 @@
      <!-- Background image -->
 <div style="background-color: grey; height: 100vh;">    
 
+    <form class="registerForm">
+    <h3>FUT CHAMPS RANK CALCULATOR</h1>
+    
+    <label for="wins">Wins</label>
+    <input type="number" id="wins" class="loginInput" name="wins"  min="0" max="20" placeholder="Enter number of wins">
+
+    <label for="loses">Loses</label>
+    <input type="number" id="loses" class="loginInput" name="loses"  min="0" max="20" placeholder="Enter number of loses">
+
+    <input type="submit" onclick="champsCal(); return false;" class="registerButton" value="Calculate" name="submit">
+
+    <div>
+        <h1 id="rankCalculator"></h1>
+    </div>
 
 
-
-
+</form>
 
 
     <!-- footer 

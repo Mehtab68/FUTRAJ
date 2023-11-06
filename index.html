@@ -66,19 +66,19 @@
 
 <div class="tax">
     
-            <form class="profitForm">
+            <form class="profitForm" return false;>
 
                 <h3> Profit Calculator</h3>
             <div>
                 <label for="buyPrice">Buy Price</label>
-                <input type="number" id="buyPrice" name="buyPrice" placeholder="Enter Buy Price">
+                <input type="number" id="buyPrice" name="buyPrice" min="0" placeholder="Enter Buy Price">
             </div>
             
             <br>
             
             <div>
                 <label for="sellPrice">Sell Price</label>
-                <input type="number" id="sellPrice" name="sellPrice" placeholder="Enter Sell Price">
+                <input type="number" id="sellPrice" name="sellPrice" min="0" placeholder="Enter Sell Price">
             </div>
             
             <br>
@@ -97,12 +97,12 @@
             <br>
             
             <div>
-                <button class="submitBTN" type="submit" onclick="returnText()">Submit</button>
+                <button class="submitBTN" type="submit" onclick="returnText();  return false;">Submit</button>
             </div>
 
             
             <div>
-                <h1 id="profitText"></h1>
+                <h1 id="profitText"> </h1>
             </div>
        
             

@@ -118,7 +118,7 @@
 
 
 
-            <form class="registerForm" action="login.php" method="post">
+            <form class="registerForm" action="registration.php" method="post">
 
                 <h3> Login Here </h3>
 

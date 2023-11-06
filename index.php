@@ -68,9 +68,9 @@ if (!isset($_SESSION["user"])) {
     <!-- Background image -->
     <div style="background-color: grey; height: 100vh;">
 
-        <div class="container">
-            <h1>Welcome to Dashboard
-                <?php echo $email ?>
+        <div class="title">
+            <h1>You are logged in as
+                <?php ?>
             </h1>
             <a href="logout.php" class="btn btn-warning">Logout</a>
         </div>
