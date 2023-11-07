@@ -71,25 +71,25 @@ function champsCal(){
     console.log(points1);
 
     if (points1 <= 11 ){
-        rankCal.textContent  = "Currently rank 7 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 7 " + "(" + points1 + " points )"
     } 
     else if (points1 <= 19 ){
-        rankCal.textContent  = "Currently rank 6 " + "(" + points1 + "points )"
-    }
+        rankCal.textContent  = "Currently rank 6 " + "(" + points1 + " points )"
+    } 
     else if (points1 <= 25 ){
-        rankCal.textContent  = "Currently rank 5 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 5 " + "(" + points1 + " points )"
     }
     else if (points1 <= 31 ){
-        rankCal.textContent  = "Currently rank 4 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 4 " + "(" + points1 + " points )"
     }
     else if (points1 <= 35 ){
-        rankCal.textContent  = "Currently rank 3 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 3 " + "(" + points1 + " points )"
     }
     else if (points1 <= 39 ){
-        rankCal.textContent  = "Currently rank 2 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 2 " + "(" + points1 + " points )"
     }
     else if (points1 == 40 ){
-        rankCal.textContent  = "Currently rank 1 " + "(" + points1 + "points )"
+        rankCal.textContent  = "Currently rank 1 " + "(" + points1 + " points )"
     }
 }
 

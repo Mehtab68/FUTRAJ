@@ -44,7 +44,7 @@ if (isset($_SESSION["user"])) {
                     <a class="nav-link" href="index.html"> Profit Calculator</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="packprofit.html"> Pack Profit</a>
+                    <a class="nav-link" href="packprofit.html"> Champs Rank</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
@@ -138,10 +138,12 @@ if (isset($_SESSION["user"])) {
                         <a href="index.html" class="text-white" style="text-decoration: none;"> Profit Calculator</a>
                     </p>
                     <p>
-                        <a href="card.html" class="text-white" style="text-decoration: none;"> Card Creator</a>
+                        <a href="packprofit.html" class="text-white" style="text-decoration: none;"> Champs Rank
+                            Calculator</a>
                     </p>
                     <p>
-                        <a href="tradingTips.html" class="text-white" style="text-decoration: none;"> Trading Tips </a>
+                        <a href="marquee.html" class="text-white" style="text-decoration: none;"> Marquee Matchups
+                            Predictions </a>
                     </p>
                     <p>
                         <a href="about.html" class="text-white" style="text-decoration: none;"> About Us</a>

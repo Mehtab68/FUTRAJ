@@ -45,7 +45,7 @@ if (!isset($_SESSION["user"])) {
                     <a class="nav-link" href="index.html"> Profit Calculator</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="packprofit.html"> Pack Profit</a>
+                    <a class="nav-link" href="packprofit.html"> Champs Rank</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
@@ -75,72 +75,76 @@ if (!isset($_SESSION["user"])) {
             <a href="logout.php" class="btn btn-warning">Logout</a>
         </div>
 
-
-        <!-- footer 
-
-
-<footer class="bg-dark text-white pt-5 pb-4 ">
- 
-    <div class="container text-center text-md-left">
-
-        <div class="row text-center text-md-left">
+    </div>
 
 
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FUTRAJ</h5>
-                <p>Welcome to FUTRAJ! This is a place to feel more conected to the Ultimate Team Community & Improve Your Ganme.</p>
+
+    <footer class="bg-dark text-white pt-5 pb-4 ">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FUTRAJ</h5>
+                    <p>Welcome to FUTRAJ! This is a place to feel more conected to the Ultimate Team Community &
+                        Improve Your Ganme.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> Profit
+                            Calculator</a>
+                    </p>
+                    <p>
+                        <a href="packprofit.html" class="text-white" style="text-decoration: none;"> Champs Rank
+                            Calculator</a>
+                    </p>
+                    <p>
+                        <a href="marquee.html" class="text-white" style="text-decoration: none;"> Marquee Matchups
+                            Predictions </a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white" style="text-decoration: none;"> About Us</a>
+                    </p>
+                </div>
+
+
+
+                <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-3">Montreal, H9H 4R7, CA</i>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3">+514 994 0583</i>
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3">Unknown</i>
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <hr class="mb-4">
 
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful Links</h5>
-                <p>
-                    <a href="index.html" class="text-white" style="text-decoration: none;" > Profit Calculator</a>
-                </p>
-                <p>
-                    <a href="card.html" class="text-white" style="text-decoration: none;" > Card Creator</a>
-                </p>
-                <p>
-                    <a href="tradingTips.html" class="text-white" style="text-decoration: none;" > Trading Tips </a>
-                </p>
-                <p>
-                    <a href="about.html" class="text-white" style="text-decoration: none;" > About Us</a>
-                </p>
-            </div>
+            <div class="row align-items-center">
 
-            
-
-            <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
-        <p>
-          <i class="fas fa-home mr-3">Montreal, H9H 4R7, CA</i>  
-        </p>
-        <p>
-            <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>  
-          </p>
-          <p>
-            <i class="fas fa-phone mr-3">+514 994 0583</i>  
-          </p>
-          <p>
-            <i class="fas fa-print mr-3">Unknown</i>  
-          </p>
-
-            </div>
-
-        </div>
-
-        <hr class="mb-4">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-7 col-lg-4">
-                <p>Copyright @2023 All rights reserved by:
-                    <a href="#" style="text-decoration: none;">
-                        <strong class="text-warning">FUTRAJ</strong>
-                    </a>
-                </p>
-            </div>
-            <!-- <div class="col-md-5 col-lg-3"> 
+                <div class="col-md-7 col-lg-4">
+                    <p>Copyright @2023 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">FUTRAJ</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- <div class="col-md-5 col-lg-3"> 
                 <div class="text-center text-md-right">
                     <ul class="list-unstyled list-incline">
                         <li class="list-incline-item">
@@ -160,10 +164,10 @@ if (!isset($_SESSION["user"])) {
                         </li>
                     </ul>
                 </div> -->
-    </div>
-    </div>
+            </div>
+        </div>
 
-    </div>
+        </div>
 
     </footer>
 

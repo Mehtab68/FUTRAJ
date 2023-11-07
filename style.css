@@ -7,102 +7,6 @@
   box-sizing: border-box;
 }
 
-/* index.html title FUTRAJ*/
-.title{
-  text-align: center;
-  padding-top: 1%;
-}
-
-/* tax form */
-
-
-
-.profitForm{
-  height: 520px;
-  width: 400px;
- background-color: #080710;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
-  padding: 50px 35px;
-}
-
-.profitForm *{
-  font-family: 'Poppins',sans-serif;
-  color: white;
-  letter-spacing: 0.5px;
-  outline: none;
-  border: none;
-}
-
-.profitForm input{
-  color: black;
-}
-
-.profitForm h3{
-  font-size: 42px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
-}
-
-.profitForm h1{
-  font-size: 35px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.profitForm label{
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.resetBTN{
-  position: relative;
-  left: 105px;
-flex-direction: column;
-align-items: center;
-padding: 6px 14px;
-font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-border-radius: 6px;
-border: none;
-
-background: #6E6D70;
-box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-color: #DFDEDF;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-}
-
-
-.submitBTN{
-  position: relative;
-  left: 100px;
-  align-items: center;
-  padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-
-  background: #6E6D70;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-  color: #DFDEDF;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-
-.aboutBody{
-padding-left: 15%;
-}
 
 /* marquee matchups space between footer  */
 
@@ -315,3 +219,11 @@ height: 30%;
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* rank calculator form */ 
+
+#rankCalculator {
+  padding-top: 70px;
+  text-align: center;
+}
+

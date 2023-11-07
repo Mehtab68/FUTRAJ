@@ -33,7 +33,7 @@
             <a class="nav-link" href="index.html"> Profit Calculator</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="packprofit.html"> Pack Profit</a>
+            <a class="nav-link" href="packprofit.html"> Champs Rank</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
@@ -56,49 +56,32 @@
     
 
     <!-- Background image -->
-<div style="background-color: grey; height: 75vh;">    
+<div style="background-color: grey; height: 100vh;">    
 
 <!-- content on index.html-->
 
-    <div class="title">
-    <h1 > Welcome to <span class="text-warning">FUTRAJ </span></h1>
-</div>
-
-<div class="tax">
     
-            <form class="profitForm" return false;>
+            <form class="registerForm" >
 
                 <h3> Profit Calculator</h3>
-            <div>
+           
                 <label for="buyPrice">Buy Price</label>
-                <input type="number" id="buyPrice" name="buyPrice" min="0" placeholder="Enter Buy Price">
-            </div>
+                <input type="number" class="loginInput" id="buyPrice" name="buyPrice" min="0" placeholder="Enter Buy Price">
             
-            <br>
             
-            <div>
+           
                 <label for="sellPrice">Sell Price</label>
-                <input type="number" id="sellPrice" name="sellPrice" min="0" placeholder="Enter Sell Price">
-            </div>
-            
-            <br>
-
-            <div>
+                <input type="number" class="loginInput" id="sellPrice" name="sellPrice" min="0" placeholder="Enter Sell Price">
+           
                 <label for="numberPlayers">Player Count</label>
-                <input type="number" id="numberPlayers" name="numberPlayers" min="0" max="5000000" placeholder="Players" />
-            </div>
-
-            <br>
+                <input type="number" class="loginInput" id="numberPlayers" name="numberPlayers" min="0" max="5000000" placeholder="Players">
+           
             
-            <div>
-                <button class="resetBTN" type="reset">Reset</button>
-            </div>
-            
-            <br>
-            
-            <div>
-                <button class="submitBTN" type="submit" onclick="returnText();  return false;">Submit</button>
-            </div>
+           
+                <button class="registerButton" type="reset">Reset</button>
+              
+                <button class="registerButton" type="submit" onclick="returnText();  return false;">Submit</button>
+          
 
             
             <div>
@@ -108,12 +91,15 @@
             
             </form>
 
-            <br>
+          
 
 </div>
 
 
-</div>
+
+
+
+
 
 
 <!-- footer -->
@@ -138,10 +124,10 @@
                     <a href="index.html" class="text-white" style="text-decoration: none;" > Profit Calculator</a>
                 </p>
                 <p>
-                    <a href="card.html" class="text-white" style="text-decoration: none;" > Card Creator</a>
+                    <a href="packprofit.html" class="text-white" style="text-decoration: none;" > Champs Rank Calculator</a>
                 </p>
                 <p>
-                    <a href="tradingTips.html" class="text-white" style="text-decoration: none;" > Trading Tips </a>
+                    <a href="marquee.html" class="text-white" style="text-decoration: none;" > Marquee Matchups Predictions </a>
                 </p>
                 <p>
                     <a href="about.html" class="text-white" style="text-decoration: none;" > About Us</a>
