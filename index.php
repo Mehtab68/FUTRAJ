@@ -117,18 +117,11 @@ if (!isset($_SESSION["user"])) {
                 <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
                     <p>
-                        <i class="fas fa-home mr-3">Montreal, H9H 4R7, CA</i>
+                        <i class="fas fa-home mr-3">CANADA</i>
                     </p>
                     <p>
                         <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>
                     </p>
-                    <p>
-                        <i class="fas fa-phone mr-3">+514 994 0583</i>
-                    </p>
-                    <p>
-                        <i class="fas fa-print mr-3">Unknown</i>
-                    </p>
-
                 </div>
 
             </div>
