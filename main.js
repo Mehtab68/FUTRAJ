@@ -93,3 +93,18 @@ function champsCal(){
     }
 }
 
+fetch("https://futdb.app/api/clubs", {
+  headers: {
+    Accept: "application/json",
+    "X-Auth-Token": "fe678785-ace6-463a-9909-7cc2cf2ec27c"
+  }
+})
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(user => {
+            const markup = `<li>${user.commonName}</li>`;
+
+            document.getElementById('players').insertAdjacentHTML('beforeend', markup);
+        })
+    })
+    .catch(error => console.log(error))
