@@ -93,18 +93,32 @@ function champsCal(){
     }
 }
 
-fetch("https://futdb.app/api/clubs", {
+function lol(){
+for (let i = 0; i < 944; i++){
+    var j = i.toString()
+    link = "https://futdb.app/api/players?page=" + j
+    console.log(link);
+
+
+fetch(link, {
   headers: {
     Accept: "application/json",
     "X-Auth-Token": "fe678785-ace6-463a-9909-7cc2cf2ec27c"
   }
 })
-    .then(res => res.json())
-    .then(data => {
-        data.forEach(user => {
-            const markup = `<li>${user.commonName}</li>`;
-
-            document.getElementById('players').insertAdjacentHTML('beforeend', markup);
-        })
+    .then(res => { 
+       return res.json()
     })
+    .then(data => {
+    console.log(data);
+    data.items.forEach(user => {
+        const markup = `<li>${user.lastName}</li>`;
+
+        document.getElementById('players').insertAdjacentHTML('beforeend', markup);
+    })
+})
     .catch(error => console.log(error))
+
+}}
+
+lol()
