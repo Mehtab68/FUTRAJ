@@ -44,6 +44,9 @@ if (isset($_SESSION["user"])) {
                     <a class="nav-link" href="index.html"> Profit Calculator</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="players.html"> Card Creator</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="packprofit.html"> Champs Rank</a>
                 </li>
                 <li class="nav-item">
