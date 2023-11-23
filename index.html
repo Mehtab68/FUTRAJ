@@ -33,7 +33,10 @@
             <a class="nav-link" href="index.html"> Profit Calculator</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="card.html"> Card Creator</a>
+            <a class="nav-link" href="players.html"> Card Creator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packprofit.html"> Champs Rank</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
@@ -41,10 +44,6 @@
         <li class="nav-item">
             <a class="nav-link" href="about.html"> About Us</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="login.html"> Sign In</a>
-        </li>
-        
 
     </ul>
 
@@ -56,66 +55,50 @@
     
 
     <!-- Background image -->
-<div style="background-color: grey; height: 75vh;">    
+<div style="background-color: grey; height: 100vh;">    
 
 <!-- content on index.html-->
 
-    <div class="title">
-    <h1 > Welcome to <span class="text-warning">FUTRAJ </span></h1>
-</div>
+    
+            <form class="registerForm" >
 
-<div class="tax">
-    <svg width="700" height="500">
-        <rect width="1300" height="2100" style="fill:rgb(255,255,255);stroke-width:1;stroke:rgb(0,0,0)" />
-        <text x="180" y="100" font-family="Verdana" font-size="35" fill="black">EAFC Profit Calculator</text>
-        <foreignObject x="90" y="150" width="500" height="350">
-            <form>
-
-                <div>
+                <h3> Profit Calculator</h3>
+           
                 <label for="buyPrice">Buy Price</label>
-                <input type="number" id="buyPrice" name="buyPrice" placeholder="Enter Buy Price">
-            </div>
+                <input type="number" class="loginInput" id="buyPrice" name="buyPrice" min="0" placeholder="Enter Buy Price">
             
-            <br>
             
-                <div>
+           
                 <label for="sellPrice">Sell Price</label>
-                <input type="number" id="sellPrice" name="sellPrice" placeholder="Enter Sell Price">
-            </div>
+                <input type="number" class="loginInput" id="sellPrice" name="sellPrice" min="0" placeholder="Enter Sell Price">
+           
+                <label for="numberPlayers">Number of Players</label>
+                <input type="number" class="loginInput" id="numberPlayers" name="numberPlayers" min="0" max="5000000" placeholder="Players">
+           
             
-            <br>
+           
+                <button class="registerButton" type="reset">Reset</button>
+              
+                <button class="registerButton" type="submit" onclick="returnText();  return false;">Submit</button>
+          
 
-            <div>
-                <label for="numberPlayers">Player Count</label>
-                <input type="number" id="numberPlayers" name="numberPlayers" min="0" max="5000000" placeholder="Players" />
-                        </div>
-
-            <br>
             
             <div>
-                <button class="resetBTN" type="reset">Reset</button>
+                <h1 id="profitText"> </h1>
             </div>
-            
-            <br>
-            
-            <div>
-                <button class="submitBTN" type="submit" onclick="returnText()">Submit</button>
-            </div>
+       
             
             </form>
 
-            <br>
-
-            <div>
-                <h1 id="profitText"></h1>
-            </div>
-        </foreignObject>
-      </svg>
-    
-</div>
-
+          
 
 </div>
+
+
+
+
+
+
 
 
 <!-- footer -->
@@ -140,10 +123,10 @@
                     <a href="index.html" class="text-white" style="text-decoration: none;" > Profit Calculator</a>
                 </p>
                 <p>
-                    <a href="card.html" class="text-white" style="text-decoration: none;" > Card Creator</a>
+                    <a href="packprofit.html" class="text-white" style="text-decoration: none;" > Champs Rank Calculator</a>
                 </p>
                 <p>
-                    <a href="tradingTips.html" class="text-white" style="text-decoration: none;" > Trading Tips </a>
+                    <a href="marquee.html" class="text-white" style="text-decoration: none;" > Marquee Matchups Predictions </a>
                 </p>
                 <p>
                     <a href="about.html" class="text-white" style="text-decoration: none;" > About Us</a>
@@ -155,7 +138,7 @@
             <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
         <p>
-          <i class="fas fa-home mr-3">Montreal, CA</i>  
+          <i class="fas fa-home mr-3">CANADA</i>  
         </p>
         <p>
             <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>  

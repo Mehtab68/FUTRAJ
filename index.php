@@ -1,0 +1,178 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: login.php");
+}
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FUTRAJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-dark">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    FUTRAJ
+                </span>
+            </a>
+            <!-- toggle button for mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- search bar -->
+            <input class="search2" type="text" method="put" id="search" placeholder="Search" value="">
+            <input class="search1" type='submit' onclick="sendToPage();" />
+
+            <!-- navbar links -->
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Profit Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="players.html"> Card Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packprofit.html"> Champs Rank</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php"> Sign In</a>
+                </li>
+
+
+            </ul>
+
+
+
+        </div>
+    </nav>
+
+    <!-- Background image -->
+    <div style="background-color: grey; height: 100vh;">
+
+        <div class="title">
+            <h1>You are logged in as
+                <?php ?>
+            </h1>
+            <a href="logout.php" class="btn btn-warning">Logout</a>
+        </div>
+
+    </div>
+
+
+
+    <footer class="bg-dark text-white pt-5 pb-4 ">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FUTRAJ</h5>
+                    <p>Welcome to FUTRAJ! This is a place to feel more conected to the Ultimate Team Community &
+                        Improve Your Ganme.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful Links</h5>
+                    <p>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> Profit
+                            Calculator</a>
+                    </p>
+                    <p>
+                        <a href="packprofit.html" class="text-white" style="text-decoration: none;"> Champs Rank
+                            Calculator</a>
+                    </p>
+                    <p>
+                        <a href="marquee.html" class="text-white" style="text-decoration: none;"> Marquee Matchups
+                            Predictions </a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white" style="text-decoration: none;"> About Us</a>
+                    </p>
+                </div>
+
+
+
+                <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-3">CANADA</i>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-7 col-lg-4">
+                    <p>Copyright @2023 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">FUTRAJ</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- <div class="col-md-5 col-lg-3"> 
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-incline">
+                        <li class="list-incline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-incline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-incline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-discord"></i></a>
+                        </li>
+                        <li class="list-incline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-incline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</body>
+
+</html>
