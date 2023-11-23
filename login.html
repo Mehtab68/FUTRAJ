@@ -22,103 +22,70 @@
         aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
     </button>
-        
+
+
     <!-- search bar -->
     <input class="search2" type="text" method="put" id="search" placeholder="Search" value="">
     <input class="search1" type='submit' onclick="sendToPage();"/>
-
+    
     <!-- navbar links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html"> Profit Calculator</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="card.html"> Card Creator</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.html"> About Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="login.html"> Sign In</a>
-        </li>
         
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> Profit Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="card.html"> Card Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="marquee.html"> Marquee Predictions </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"> Sign In</a>
+                </li>
+            </ul>
 
-    </ul>
+        
 
         </div>
-
-        
     </nav>
 
-    
+     <!-- Background image -->
+<div style="background-color: grey; height: 100vh;">    
 
-    <!-- Background image -->
-<div style="background-color: grey; height: 75vh;">    
 
-<!-- content on index.html-->
 
-    <div class="title">
-    <h1 > Welcome to <span class="text-warning">FUTRAJ </span></h1>
+<h1>Sign Up</h1>
+
+<form action="process-signup.php" method="post">
+    <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
 </div>
 
-<div class="tax">
-    <svg width="700" height="500">
-        <rect width="1300" height="2100" style="fill:rgb(255,255,255);stroke-width:1;stroke:rgb(0,0,0)" />
-        <text x="180" y="100" font-family="Verdana" font-size="35" fill="black">EAFC Profit Calculator</text>
-        <foreignObject x="90" y="150" width="500" height="350">
-            <form>
-
-                <div>
-                <label for="buyPrice">Buy Price</label>
-                <input type="number" id="buyPrice" name="buyPrice" placeholder="Enter Buy Price">
-            </div>
-            
-            <br>
-            
-                <div>
-                <label for="sellPrice">Sell Price</label>
-                <input type="number" id="sellPrice" name="sellPrice" placeholder="Enter Sell Price">
-            </div>
-            
-            <br>
-
-            <div>
-                <label for="numberPlayers">Player Count</label>
-                <input type="number" id="numberPlayers" name="numberPlayers" min="0" max="5000000" placeholder="Players" />
-                        </div>
-
-            <br>
-            
-            <div>
-                <button class="resetBTN" type="reset">Reset</button>
-            </div>
-            
-            <br>
-            
-            <div>
-                <button class="submitBTN" type="submit" onclick="returnText()">Submit</button>
-            </div>
-            
-            </form>
-
-            <br>
-
-            <div>
-                <h1 id="profitText"></h1>
-            </div>
-        </foreignObject>
-      </svg>
-    
+<div>
+      <label for="email">email</label>
+      <input type="email" id="email" name="email">
 </div>
 
-
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
 </div>
 
+<div>
+    <label for="password_confirmation">Repeat password</label>
+    <input type="password" id="password_confirmation" name="password_confirmation">
+</div>
 
-<!-- footer -->
+<button>Sign Up</button>
+
+</form>
+
+    <!-- footer 
 
 
 <footer class="bg-dark text-white pt-5 pb-4 ">
@@ -130,7 +97,7 @@
 
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FUTRAJ</h5>
-                <p>Welcome to FUTRAJ! This is a place to feel more conected to the Ultimate Team Community & Improve Your Game.</p>
+                <p>Welcome to FUTRAJ! This is a place to feel more conected to the Ultimate Team Community & Improve Your Ganme.</p>
             </div>
 
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -155,12 +122,17 @@
             <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
         <p>
-          <i class="fas fa-home mr-3">Montreal, CA</i>  
+          <i class="fas fa-home mr-3">Montreal, H9H 4R7, CA</i>  
         </p>
         <p>
             <i class="fas fa-envelope mr-3">FUTRAJ@gmail.com</i>  
           </p>
-          
+          <p>
+            <i class="fas fa-phone mr-3">+514 994 0583</i>  
+          </p>
+          <p>
+            <i class="fas fa-print mr-3">Unknown</i>  
+          </p>
 
             </div>
 
@@ -203,8 +175,6 @@
     </div>
 
 </footer>
-
-
 
 <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
