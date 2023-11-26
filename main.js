@@ -1,9 +1,7 @@
 
 /* profit calculator funtions */
 
-
-
-function returnText(event) { 
+function returnText() {
     let buyPrice = document.getElementById("buyPrice").value 
     let sellPrice = document.getElementById("sellPrice").value
     let numberPlayers = document.getElementById("numberPlayers").value
