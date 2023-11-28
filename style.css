@@ -103,6 +103,17 @@ height: 30%;
 }
 
 
+.search3{
+  position: relative;
+  right: 100px;
+}
+
+.search4{
+  position: relative;
+  right: 180px;
+}
+
+
 /* loginForm */ 
 
 .loginForm{
