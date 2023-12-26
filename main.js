@@ -92,7 +92,7 @@ function champsCal(){
 }
 
 function lol(){
-for (let i = 0; i < 944; i++){
+for (let i = 0; i < 2; i++){
     var j = i.toString()
     link = "https://futdb.app/api/players?page=" + j
     console.log(link);
@@ -112,7 +112,8 @@ fetch(link, {
     data.items.forEach(user => {
         const markup = `<li>${user.lastName}</li>`;
 
-        document.getElementById('players').insertAdjacentHTML('beforeend', markup);
+        
+        availableKeywords.push(`${user.lastName}`);
     })
 })
     .catch(error => console.log(error))
@@ -120,4 +121,38 @@ fetch(link, {
 }}
 
 
+lol()
 
+let availableKeywords = [];
+
+const resultsBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeywords.filter((keyword)=>{
+          return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.log(result);
+    }
+    display(result);
+
+    if(!result.length){
+        resultsBox.innerHTML = '';
+    }
+}
+
+function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectInput(this)>" + list + "</li>"
+    });
+
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>"
+}
+
+function selectInput(list){
+    inputBox.value = list.innerHTML;
+    resultsBox.innerHTML = '';
+}
