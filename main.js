@@ -119,5 +119,5 @@ fetch(link, {
 
 }}
 
-lol()
+
 
