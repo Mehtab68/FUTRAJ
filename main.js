@@ -159,3 +159,9 @@ function selectInput(list){
 function searchPlayer(){
     console.log("Hello badshah");
 }
+
+document.getElementById("playerForm").playerCard.onchange = function(){
+    var cardStyle = this.value
+    document.getElementById("cardStyle").src = "./images/cardTypes/" + cardStyle + ".png" 
+    console.log(document.getElementById("cardStyle"));
+}

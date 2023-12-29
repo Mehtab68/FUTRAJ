@@ -313,3 +313,17 @@ button .fa-solid{
   max-height: 300px;
   overflow-y: scroll;
 }
+
+/* Positioning card */
+
+.cardPosition{
+  position: absolute;
+  top: 35%;
+  margin-left: 250px;
+}
+
+.playerForm{
+  position: absolute;
+  top: 40%;
+  margin-left: 800px;
+}
