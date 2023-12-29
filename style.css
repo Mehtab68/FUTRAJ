@@ -102,7 +102,6 @@ height: 30%;
   right: 110px;
 }
 
-
 .search3{
   position: relative;
   right: 100px;
@@ -259,8 +258,8 @@ height: 30%;
   background: #fff;
   border-radius: 5px;
   position: relative;
-  left: 600px;
-  top: 200px;
+  left: 650px;
+  top: 80px;
 }
 
 .row{
@@ -269,7 +268,7 @@ height: 30%;
   padding: 10px 20px;
 }
 
-input{
+.playerSearch{
   flex: 1;
   height: 50px;
   background: transparent;

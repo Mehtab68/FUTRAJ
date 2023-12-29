@@ -95,7 +95,7 @@ function lol(){
 for (let i = 0; i < 2; i++){
     var j = i.toString()
     link = "https://futdb.app/api/players?page=" + j
-    console.log(link);
+    
 
 
 fetch(link, {
@@ -108,7 +108,6 @@ fetch(link, {
        return res.json()
     })
     .then(data => {
-    console.log(data);
     data.items.forEach(user => {
         const markup = `<li>${user.lastName}</li>`;
 
@@ -155,4 +154,8 @@ function display(result){
 function selectInput(list){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
+}
+
+function searchPlayer(){
+    console.log("Hello badshah");
 }
