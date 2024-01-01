@@ -143,6 +143,8 @@ inputBox.onkeyup = function(){
     }
 }
 
+/* card selector search bar */
+
 function display(result){
     const content = result.map((list)=>{
         return "<li onclick=selectInput(this)>" + list + "</li>"
@@ -163,5 +165,4 @@ function searchPlayer(){
 document.getElementById("playerForm").playerCard.onchange = function(){
     var cardStyle = this.value
     document.getElementById("cardStyle").src = "./images/cardTypes/" + cardStyle + ".png" 
-    console.log(document.getElementById("cardStyle"));
 }
