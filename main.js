@@ -134,7 +134,7 @@ inputBox.onkeyup = function(){
         result = availableKeywords.filter((keyword)=>{
           return keyword.toLowerCase().includes(input.toLowerCase());
         });
-        console.log(result);
+        
     }
     display(result);
 
@@ -159,7 +159,7 @@ function selectInput(list){
 }
 
 function searchPlayer(){
-    console.log("Hello badshah");
+    
 }
 
 document.getElementById("playerForm").playerCard.onchange = function(){
