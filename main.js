@@ -92,7 +92,7 @@ function champsCal(){
 }
 
 function lol(){
-for (let i = 0; i < 2; i++){
+for (let i = 0; i < 10; i++){
     var j = i.toString()
     link = "https://futdb.app/api/players?page=" + j
     
