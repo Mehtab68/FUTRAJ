@@ -332,6 +332,8 @@ button .fa-solid{
   display: inline;
 }
 
+/* First Owner Badge */
+
 .features{
   position: absolute;
   bottom: 0;
@@ -343,3 +345,12 @@ button .fa-solid{
   display: none;
 }
 
+/* Chemistry Style */
+
+.chemStyle{
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  left: 310px;
+  width: 80px;
+}

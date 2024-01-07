@@ -143,7 +143,6 @@ inputBox.onkeyup = function(){
     }
 }
 
-/* card selector search bar */
 
 function display(result){
     const content = result.map((list)=>{
@@ -162,6 +161,9 @@ function searchPlayer(){
     
 }
 
+
+/* Card Style */
+
 document.getElementById("playerForm").playerCard.onchange = function(){
     var cardStyle = this.value
     document.getElementById("cardStyle").src = "./images/cardTypes/" + cardStyle + ".png" 
@@ -178,3 +180,9 @@ document.getElementById("playerForm").playerCard.onchange = function(){
         }
     });
 
+/* Chem Style */
+
+document.getElementById("playerForm").chemistryStyle.onchange = function(){
+    var chemistryStyle = this.value
+    document.getElementById("chemStyle").src = "./images/chemistryStyles/" + chemistryStyle + ".png" 
+}
