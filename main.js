@@ -166,3 +166,16 @@ document.getElementById("playerForm").playerCard.onchange = function(){
     var cardStyle = this.value
     document.getElementById("cardStyle").src = "./images/cardTypes/" + cardStyle + ".png" 
 }
+
+
+/* first Owner badge with JQuery */
+
+
+    $('#firstOwner').on("click", function(){
+        if( $('#firstOwner1').is(':hidden')) {
+        $('#firstOwner1').show();
+        }else{
+        $('#firstOwner1').hide();
+        }
+    });
+
