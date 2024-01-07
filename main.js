@@ -170,7 +170,6 @@ document.getElementById("playerForm").playerCard.onchange = function(){
 
 /* first Owner badge with JQuery */
 
-
     $('#firstOwner').on("click", function(){
         if( $('#firstOwner1').is(':hidden')) {
         $('#firstOwner1').show();
