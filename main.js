@@ -91,7 +91,7 @@ function champsCal(){
     }
 }
 
-function lol(){
+function playerName(){
 for (let i = 0; i < 10; i++){
     var j = i.toString()
     link = "https://futdb.app/api/players?page=" + j
@@ -110,7 +110,6 @@ fetch(link, {
     .then(data => {
     data.items.forEach(user => {
         const markup = `<li>${user.lastName}</li>`;
-
         
         availableKeywords.push(`${user.lastName}`);
     })
@@ -120,7 +119,9 @@ fetch(link, {
 }}
 
 
-lol()
+playerName()
+
+/* Search Bar for players */
 
 let availableKeywords = [];
 
@@ -157,9 +158,7 @@ function selectInput(list){
     resultsBox.innerHTML = '';
 }
 
-function searchPlayer(){
-    
-}
+
 
 
 /* Card Style */
@@ -185,4 +184,9 @@ document.getElementById("playerForm").playerCard.onchange = function(){
 document.getElementById("playerForm").chemistryStyle.onchange = function(){
     var chemistryStyle = this.value
     document.getElementById("chemStyle").src = "./images/chemistryStyles/" + chemistryStyle + ".png" 
+}
+
+function searchPlayer(){
+    var player = document.getElementById("input-box").value;
+
 }
