@@ -111,7 +111,7 @@ fetch(link, {
     data.items.forEach(user => {
         const markup = `<li>${user.lastName}</li>`;
         
-        availableKeywords.push(`${user.lastName}`);
+        availableKeywords.push(`${user.lastName}` + ` ${user.rating}`);
     })
 })
     .catch(error => console.log(error))
@@ -188,7 +188,11 @@ document.getElementById("playerForm").chemistryStyle.onchange = function(){
 
 function searchPlayer(){
     var player = document.getElementById("input-box").value;
-    console.log(player);
+    var rating = player.replace(/\D/g,'');
+    player = player.replace(/\d+/g, '');
+    player = player.replace(/\s/g, '');
+    
+    
 
     for (let i = 0; i < 10; i++){
         var j = i.toString()
@@ -207,11 +211,14 @@ function searchPlayer(){
         })
         .then(data => {
         data.items.forEach(user => {
-            
-            if(`${user.lastName}` == player){
-                console.log(`${user.pace}`);
-            }
 
+            if(`${user.lastName}` == player && `${user.rating}` == rating){
+                
+                div.innerHTML += ""
+                div.innerHTML += "Pace :" + ` ${user.pace}`
+
+            }
+           
         })
     })
         .catch(error => console.log(error))
