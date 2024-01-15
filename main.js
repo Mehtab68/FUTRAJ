@@ -188,5 +188,34 @@ document.getElementById("playerForm").chemistryStyle.onchange = function(){
 
 function searchPlayer(){
     var player = document.getElementById("input-box").value;
+    console.log(player);
+
+    for (let i = 0; i < 10; i++){
+        var j = i.toString()
+        link = "https://futdb.app/api/players?page=" + j
+        
+    
+    
+    fetch(link, {
+      headers: {
+        Accept: "application/json",
+        "X-Auth-Token": "fe678785-ace6-463a-9909-7cc2cf2ec27c"
+      }
+    })
+        .then(res => { 
+           return res.json()
+        })
+        .then(data => {
+        data.items.forEach(user => {
+            
+            if(`${user.lastName}` == player){
+                console.log(`${user.pace}`);
+            }
+
+        })
+    })
+        .catch(error => console.log(error))
+    
+    }
 
 }
