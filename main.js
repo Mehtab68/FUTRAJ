@@ -226,3 +226,6 @@ function searchPlayer(){
     }
 
 }
+
+
+/* AI CHAT BOT */
